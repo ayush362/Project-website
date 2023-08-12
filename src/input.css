@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.hover-arrow img {
+    transition: transform 0.25s ease;
+}
+
+.hover-arrow:hover img {
+    transform: translateX(4px);
+}
+
+.graphic-grid {
+    grid-template-areas:
+        "card slack slack"
+        "phone slack slack"
+        "phone dash dash";
+}
+
+#credit-card {
+    grid-area: card;
+    width: 90%;
+}
+
+#slack-invoice {
+    grid-area: slack;
+    width: 90%;
+}
+
+#phone {
+    grid-area: phone;
+    width: 90%;
+}
+
+#dash {
+    width: 90%;
+    grid-area: dash;
+}
+
+.icon {
+    width: 60px;
+    margin-bottom: 30px;
+}
+
+.top {
+    position: relative;
+}
+
+.top::before {
+    content: "";
+    width: 100%;
+    height: 150%;
+    position: absolute;
+    top: -40%;
+    background: linear-gradient(101.33deg,
+            #08209a 0.76%,
+            #6563ff 33.33%,
+            #36c5f0 76.92%,
+            #83e2ff 96.96%);
+    transform: skewY(-5deg);
+    z-index: 1;
+}
+
+.avatar {
+    bottom: -70px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.s-5 {
+    position: relative;
+    padding: 192px 0;
+    z-index: 1;
+}
+
+.s-5::before {
+    content: "";
+    background-color: #0a2540;
+    width: 100%;
+    height: 1100px;
+    position: absolute;
+    top: -32px;
+    left: 0;
+    z-index: -1;
+    transform: skewY(-10deg);
+}
+
+.s-7::before {
+    content: "";
+    width: 100%;
+    height: 1200px;
+    background-color: green;
+    position: absolute;
+    top: -32;
+    left: 0;
+    transform: skewY(-10deg);
+    z-index: -1;
+    background-color: #0a2540;
+
+}
+
+
+.s-8{
+    position: relative;
+}
+.s-8::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    z-index: -1 ;
+}
+
+#gradient{
+    width: 200%;
+    height: 970px;
+    transform: rotate(-10deg);
+    position: absolute;
+    top: -600px;
+    left: -50% ;
+    z-index: -1;
+    --gradient-color-1:#ef008f;
+    --gradient-color-2:#6ecef4;
+    --gradient-color-3:#7038ff;
+    --gradient-color-4:#ffba27;
+}
