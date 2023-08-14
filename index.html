@@ -13,37 +13,54 @@
     <title>My Project</title>
 </head>
 
-<body class="font-Mbody text-black w-full box-border    ">
-    <header class="flex justify-center items-center pt-10">
-        <nav class="flex justify-between items-center w-full container px-md my-sm">
-            <img src="assets/logo-white.svg" alt="">
-            <ul class="flex justify-center items-center">
+<body class="font-Mbody text-black w-full box-border">
+    <header class="flex justify-center items-center pt-10 navbar ">
+        <nav class="flex justify-between items-center w-full container px-md my-sm max-[740px]:justify-center max-[740px]:items-start ">
+            <img class="max-[740px]:mr-20" src="assets/logo-white.svg" alt="">
+            <ul class="flex justify-center items-center max-[768px]:hidden">
                 <li><a class="text-white mx-md   hover:underline font-bold" href="#">Products</a></li>
                 <li><a class="text-white mx-md   hover:underline font-bold" href="#">Solutions</a></li>
                 <li><a class="text-white mx-md   hover:underline font-bold" href="#">Developers</a></li>
                 <li><a class="text-white mx-md   hover:underline font-bold" href="#">Resources</a></li>
                 <li><a class="text-white mx-md   hover:underline font-bold" href="#">Pricing</a></li>
             </ul>
+            <div class="hamburgur  cursor-pointer h-12 w-12 z-30 ">
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
+                <div class="bar bar3"></div>
+            </div>
+            <nav class="h-screen flex nav flex-col items-center justify-center bg-white gap-5 mobileNav w-20 fixed z-10 top-0 ">
+                <a class="hover:underline" href="#work">Work</a>
+                <a class="hover:underline" href="#contact">Contact</a>
+                <a class="hover:underline" href="#work">products</a>
+                <a class="hover:underline" href="#contact">solutions</a>
+                <a class="hover:underline" href="#work">resources</a>
+                <a class="hover:underline" href="#contact">pricing</a>
+            </nav>
             <button
-                class="text-base font-bold rounded-3xl bg-Maccent text-white py-sm px-md hover:bg-btnHover cursor-pointer">
+                class="text-base max-[768px]:hidden font-bold rounded-3xl bg-Maccent text-white py-sm px-md hover:bg-btnHover cursor-pointer">
                 Sign in</button>
         </nav>
     </header>
     <canvas id="gradient"></canvas>
     <!-- Section 1 of the page -->
-    <section class="my-xl flex flex-col justify-center items-center pt-10">
-        <div class="container w-full flex justify-center items-start box-border">
-            <div class="w-1/2 box-border pr-md flex flex-col justify-center items-start">
-                <h1 class="font-Mhead font-semibold text-h1 w-full leading-h1">Payments Infrastructre for the world
+    <section class="my-xl flex flex-col justify-center items-center pt-10 max-[640px]:pt-0">
+        <div class="container w-full flex justify-center items-start box-border max-[640px]:flex-col ">
+            <div
+                class="w-1/2 box-border pr-md flex flex-col justify-center items-start max-[640px]:w-full max-[640px]:items-center ">
+                <h1
+                    class="font-Mhead font-semibold text-h1 w-full lg:leading-h1 max-[1024px]:text-h2 max-[640px]:text-h3">
+                    Payments
+                    Infrastructre for the world
                 </h1>
                 <p class="text-lg my-md max-w-lg">Tons of companies all over the world use Swipe's seamless platform to
                     manage
                     their business's entire financial <br> transaction nfrastructre online</p>
                 <div class="flex gap-4 my-md">
-                    <button class="hover-arrow text-base font-bold rounded-3xl bg-Maccent text-white py-sm px-md hover:bg-btnHover
-                    cursor-pointer flex justify-center items-center">start
+                    <button class="hover-arrow text-base font-bold rounded-3xl  text-Mpurple2  py-sm px-md hover:bg-btnHover
+                    cursor-pointer flex justify-center items-center max-[600px]:">start
                         now
-                        <img src="assets/arrow-right-light.svg" alt=""></button>
+                        <img class="" src="assets/arrow-right-purple.svg" alt=""></button>
                     <button
                         class="text-Mpurple2 hover-arrow flex justify-center items-center text-base font-bold rounded-3xl bg-transparent   hover:opacity-75 cursor-pointer">Contact
                         sale
@@ -51,7 +68,8 @@
                     </button>
                 </div>
             </div>
-            <div class="w-1/2 box-border pl-md flex flex-col justify-center items-center trans  h-564">
+            <div
+                class="w-1/2 box-border pl-md flex flex-col justify-center items-center   h-564 max-[640px]:w-full mobile">
                 <img class="h-628" src="assets/hero-phone.png" alt="">
             </div>
         </div>
@@ -59,7 +77,8 @@
     <!-- Section 2 of the page  -->
     <section class="flex flex-col justify-center items-center">
         <div class="container">
-            <div class="grid grid-cols-4 grid-rows-2 my-xl gap-y-lg">
+            <div
+                class="grid grid-cols-4 grid-rows-2 my-xl gap-y-lg max-[550px]:grid-cols-2 max-[768px]:w-full max-[768px]:h-auto max-[768px]:mb-0">
                 <img class="h-16" src="assets/instacart.png" alt="instacart">
                 <img class="h-16" src="assets/salesforce.png" alt="salesforce">
                 <img class="h-16" src="assets/amazon.png" alt="amazon">
@@ -75,10 +94,13 @@
     <section class=" flex flex-col justify-center items-center py-xl bg-light">
         <div class="container">
             <span class="text-Mpurple1 font-Mhead font-medium text-base">Unified platforms</span>
-            <h2 class="ont-Mhead font-semibold text-h3  W-1/2 py-4 mb-md">All the payment Products you'll <br> ever need
+            <h2 class="font-Mhead font-semibold text-h3  W-1/2 py-4 mb-md max-[768px]:w-full">All the payment Products
+                you'll <br> ever
+                need
             </h2>
-            <div class="container w-full flex justify-center items-start box-border">
-                <div class="w-1/2 box-border pr-md flex flex-col justify-center items-start">
+            <div
+                class="container w-full flex justify-center items-start box-border max-[768px]:flex-col  max-[768px]:gap-7">
+                <div class="w-1/2 box-border pr-md flex flex-col justify-center items-start max-[768px]:w-full">
                     <p class="">We've got everything you'll need and more to build websites and
                         apps <br> that handle payments, payouts, and much more. Swipe’s
                         products <br> power payments for
@@ -90,7 +112,7 @@
                         everything in between.
                     </p>
                 </div>
-                <div class="w-1/2 box-border pl-md flex flex-col justify-center items-start">
+                <div class="w-1/2 box-border md:pl-md flex flex-col justify-center items-start max-[768px]:w-full">
                     <p class=""> We also help companies
                         <a class="text-Mpurple1 font-medium hover:text-Maccent" href="#">tackle fraud</a>, <a
                             href="#">issue invoices</a>,
@@ -121,11 +143,13 @@
         </div>
     </section>
     <!-- Section 5 of the page -->
-    <section class="flex flex-col justify-center items-center py-xl text-white  s-5">
-        <div class="container w-full flex justify-center items-start box-border">
-            <div class="w-1/2 box-border pr-md flex flex-col justify-center items-start my-xl">
+    <section class="flex flex-col justify-center items-center py-xl text-white  s-5  ">
+        <div
+            class="container w-full flex justify-center items-start box-border max-[1024px]:flex-col max-[1024px]:items-center  ">
+            <div class="w-1/2 box-border pr-md flex flex-col justify-center items-start my-xl max-[1024px]:w-full ">
                 <span class="text-Mpurple1 font-Mhead font-medium text-base">Design for engineers</span>
-                <h2 class="font-Mhead font-medium text-h2 w-full">The world's best and most <br> intuitive APIs</h2>
+                <h2 class="font-Mhead font-medium text-h2 w-full max-[1024px]:text-h3">The world's best and most
+                    intuitive APIs</h2>
                 <p class="w-2/3 ">We abstract the hard stuff away so your team don't can focus on building good
                     technologies,instead of
                     spending time and money reinventing the wheel</p>
@@ -133,8 +157,10 @@
                     cursor-pointer flex justify-center items-center">start
                     now
                     <img src="assets/arrow-right-dark.svg" alt=""></button>
-                <div class="container w-full flex justify-center items-start box-border my-xl">
-                    <div class="w-1/2 box-border pr-md flex flex-col justify-center items-start gap-3">
+                <div
+                    class="container w-full flex justify-center items-start box-border my-xl max-[640px]:flex-col  max-[400px]:pb-52 ">
+                    <div
+                        class="w-1/2 box-border pr-md flex flex-col justify-center items-start gap-3 max-[1024px]:w-full max-[1024px]:items-center">
                         <div class="flex flex-col justify-start items-start py-sm pr-lg">
                             <img class="h-12 mb-sm" src="assets/tools-icon.png" alt="">
                             <h3 class="font-Mhead font-medium text-h6 w-full ">Tools for all stack</h3>
@@ -149,7 +175,8 @@
                             </button>
                         </div>
                     </div>
-                    <div class="w-1/2 box-border pl-md flex flex-col justify-center items-start ">
+                    <div
+                        class="w-1/2 box-border pl-md flex flex-col justify-center items-start max-[640px]:pl-0  max-[640px]:w-full">
                         <div class="flex flex-col justify-start items-start ">
                             <img class="h-12 mb-sm" src="assets/tools-icon.png" alt="">
                             <h3 class="font-Mhead font-medium text-h6 w-full ">Tools for all stack</h3>
@@ -167,43 +194,44 @@
                 </div>
             </div>
             <div class="w-1/2 box-border pl-md flex flex-col justify-center items-start gap-lg ">
-                <img class="max-w-md rounded-3xl" src="assets/api-code.png  " alt="api-code">
-                <img class="max-w-md rounded-3xl" src="assets/terminal-code.png" alt="terminal-code">
+                <img class="max-w-md rounded-3xl max-[1024px]:hidden" src="assets/api-code.png  " alt="api-code">
+                <img class="max-w-md rounded-3xl max-[1024px]:hidden " src="assets/terminal-code.png"
+                    alt="terminal-code">
             </div>
         </div>
     </section>
     <!-- Section 6 of the page -->
-    <section class="flex flex-col justify-center items-center  mb-96 mt-20">
+    <section class="flex flex-col justify-center items-center  mb-96 mt-20 max-[768px]:mb-0">
         <div class="container py-lg">
             <span class="text-Mpurple1 font-Mhead font-medium text-base">Why swipe</span>
             <h2 class="font-Mhead font-medium text-h2 w-full">A tech-first approach to finance</h2>
-            <div class="flex my-lg">
-                <div class="pr-sm mr-sm">
-                    <img src="assets/cloud-icon.png" alt="cloud-icon" class="icon">
+            <div class="flex my-lg max-[768px]:flex-wrap">
+                <div class="pr-sm md:mr-sm w-1/4 max-[768px]:w-1/2 max-[640px]:w-full">
+                    <img src="assets/cloud-icon.png" alt="cloud-icon" class="icon max-[640px]:w-8">
                     <h3 class="font-Mhead font-semibold text-h3 w-full">Efficient Always</h3>
                     <p class="text-sm  tracking-tight">
                         We've optimized every level of the finance stack, from integrations to prebuilt checkout
                         flows - no detail has been spared.
                     </p>
                 </div>
-                <div class="pr-sm mr-sm">
-                    <img src="assets/cycle-icon.png" alt="" class="icon">
+                <div class="pr-sm md:mr-sm w-1/4 max-[768px]:w-1/2 max-[640px]:w-full">
+                    <img src="assets/cycle-icon.png" alt="" class="icon max-[640px]:w-8">
                     <h3 class="font-Mhead font-semibold text-h3 w-full">Fast-Improving</h3>
                     <p class="text-sm  tracking-tight">
                         We make constant updates and improvements to help you stay on the cutting edge of your
                         industry, deploying to production around 20X per day!
                     </p>
                 </div>
-                <div class="pr-sm mr-sm">
-                    <img src="assets/shield-icon.png" alt="" class="icon">
+                <div class="pr-sm md:mr-sm w-1/4 max-[768px]:w-1/2 max-[640px]:w-full">
+                    <img src="assets/shield-icon.png" alt="" class="icon max-[640px]:w-8">
                     <h3 class="font-Mhead font-semibold text-h3 w-full">Tried and true</h3>
                     <p class="text-sm  tracking-tight">
                         Our systems operate with 100% uptime, with scalability and uptime as a guarantee. Swipe is
                         super duper certified so don't worry
                     </p>
                 </div>
-                <div class="pr-sm mr-sm">
-                    <img src="assets/bars-icon.png" alt="" class="icon">
+                <div class="pr-sm md:mr-sm w-1/4 max-[768px]:w-1/2 max-[640px]:w-full">
+                    <img src="assets/bars-icon.png" alt="" class="icon max-[640px]:w-8">
                     <h3 class="font-Mhead font-semibold text-h3 w-full">Crazy Optimized</h3>
                     <p class="text-sm  tracking-tight">
                         We use machine learning trained on billions of data points to help optimize all products,
@@ -217,7 +245,7 @@
     <section class="flex flex-col justify-center items-center  text-white pt-20 s-7">
         <div class="container ">
             <div class="container w-full flex justify-center items-center box-border">
-                <div class="w-1/2 box-border pr-md flex flex-col justify-center items-start">
+                <div class="w-1/2 box-border pr-md flex flex-col justify-center items-start max-[768px]:w-full">
                     <span class="text-Mblue font-Mhead font-medium text-base">global scale</span>
                     <h2 class="font-Mhead font-medium text-h2 w-full">A structure of global business</h2>
                     <p class="text-lg my-md">Swipe makes moving money simple,borderless,and programmable-just like the
@@ -226,33 +254,38 @@
                             class="text-Mblue font-medium hover:text-white" href="#"> startups ,Fortune 500, and
                             everyting in between</a></p>
                 </div>
-                <div class="w-1/2 box-border pl-md flex flex-col justify-center items-start">
+                <div class="w-1/2  box-border pl-md flex flex-col justify-center items-start">
                     <img class="opacity-25 " src="assets/global-graphic.png" alt="">
                 </div>
             </div>
-            <div class="container w-full flex justify-center items-start box-border">
-                <div class="w-1/4 box-border pr-md flex flex-col justify-center items-start">
+            <div
+                class="container w-full flex max-[768px]:flex-wrap mt-20  justify-center items-start box-border max-[550px]:items-center">
+                <div
+                    class="w-1/4 max-[768px]:w-1/2 max-[550px]:w-full box-border pr-md flex flex-col justify-center items-start">
                     <h3 class="border-l-2 border-Mblue  pl-sm font-Mhead font-semibold text-h3 w-full">250M+</h3>
                     <p class="text-sm text-Mgray tracking-tight">
-                        API request each day,peaking at <br> 15,000 request a day
+                        API request each day,peaking at 15,000 request a day
                     </p>
                 </div>
-                <div class="w-1/4 box-border pr-md flex flex-col justify-center items-start">
+                <div
+                    class="w-1/4 max-[768px]:w-1/2 max-[550px]:w-full box-border pr-md flex flex-col justify-center items-start">
                     <h3 class="border-l-2 border-Mblue  pl-sm font-Mhead  font-semibold text-h3 w-full">97%</h3>
                     <p class="text-sm text-Mgray tracking-tight">
-                        of US adults have bought from <br> business that use swipe
+                        of US adults have bought from business that use swipe
                     </p>
                 </div>
-                <div class="w-1/4 box-border pr-md flex flex-col justify-center items-start">
+                <div
+                    class="w-1/4 max-[768px]:w-1/2 max-[550px]:w-full box-border pr-md flex flex-col justify-center items-start">
                     <h3 class="border-l-2 border-Mblue  pl-sm font-Mhead font-semibold text-h3 w-full">135+</h3>
                     <p class="text-sm text-Mgray tracking-tight">
-                        currencies and payment method <br> supported
+                        currencies and payment method supported
                     </p>
                 </div>
-                <div class="w-1/4 box-border pr-md flex flex-col justify-center items-start">
+                <div
+                    class="w-1/4 max-[768px]:w-1/2 max-[550px]:w-full box-border pr-md flex flex-col justify-center items-start">
                     <h3 class="border-l-2 border-Mblue  pl-sm font-Mhead font-semibold text-h3 w-full">35+</h3>
                     <p class="text-sm text-Mgray tracking-tight">
-                        countries with local acquiring , <br> optimizing acceptance rate
+                        countries with local acquiring , optimizing acceptance rate
                     </p>
                 </div>
             </div>
@@ -260,11 +293,13 @@
     </section>
     <!-- Section 8 of the page  -->
     <section class="flex flex-col justify-center items-center py-20 mt-14 s-8">
-        <div class="container w-full flex justify-center items-start box-border">
-            <div class="w-1/2 box-border pr-md flex flex-col justify-center items-start pt-32">
+        <div
+            class="container w-full flex justify-center items-start box-border max-[1124px]:flex-col max-[1124px]:items-center max-[1124px]:gap-5 max-[776px]:items-start max-[776px]:ml-xl">
+            <div class="w-1/2 box-border pr-md flex flex-col justify-center items-start pt-32 max-[640px]:pt-0 max-[768px]:w-full">
                 <span class="text-Mpurple1 font-Mhead font-medium text-base">Virtual events</span>
                 <h2 class="font-Mhead font-medium text-h2 w-full">Check out sessions now!</h2>
-                <p class="text-lg my-md w-3/4">Swipe sessions is our annual conference - it's now available to watch on
+                <p class="text-lg my-md w-3/4 max-[768px]:w-full">Swipe sessions is our annual conference - it's now
+                    available to watch on
                     demand
                     ! check it out and
                     become an "internet economy" genius, and see how swipe can transform the way you do business online.
@@ -273,7 +308,7 @@
                     hover:bg-btnHover cursor-pointer flex justify-center items-center">
                     Start now <img class="hover:img:translate-x-7" src="assets/arrow-right-light.svg" alt=""></button>
             </div>
-            <div class="w-1/2 box-border pl-md flex flex-col justify-center items-start ">
+            <div class="w-1/2 box-border lg:pl-md flex flex-col justify-center items-start ">
                 <div class="shadow-standard  rounded-3xl overflow-hidden">
                     <div class="w-540 h-250 flex items-center justify-center top">
                         <img class="z-10 w-96" src="assets/swipe-sessions.png" alt="d">
@@ -293,8 +328,8 @@
     </section>
     <!-- Section 9 of the page -->
     <section class="py-xl flex justify-center  flex-col items-center">
-        <div class="container  flex box-border">
-            <div class="w-1/2 box-border pr-md flex flex-col justify-center items-start">
+        <div class="container  flex box-border max-[768px]:flex-col">
+            <div class="w-1/2 box-border pr-md flex flex-col justify-center items-start max-[768px]:w-full ">
                 <h2 class="font-Mhead font-medium text-h2 w-full">What are you waiting for?</h2>
 
                 <p class="text-lg my-md w-3/4 ">Explore <a class="text-Mpurple1 font-medium hover:text-Maccent"
@@ -304,11 +339,12 @@
                     class="hover-arrow text-base font-bold rounded-3xl bg-Mpurple1 text-white py-sm px-md hover:bg-btnHover cursor-pointer flex justify-center items-center">
                     Start now <img class="hover:img:translate-x-7" src="assets/arrow-right-light.svg" alt=""></button>
             </div>
-            <div class="w-1/2 box-border pl-md flex  justify-center items-start">
+            <div
+                class="w-1/2 box-border pl-md flex max-[640px]:flex-col   justify-center items-start max-[768px]:w-full max-[768px]:mt-20">
                 <div class="pr-sm mr-sm flex flex-col items-start justify-center gap-3">
                     <img src="assets/shield-icon.png" alt="" class="icon">
                     <h3 class="font-Mhead font-semibold text-h3 w-full">Always know what you pay</h3>
-                    <p class="text-sm  tracking-tight">
+                    <p class="text-sm  tracking-tight max-[768px]:mt-12">
                         Our systems operate with 100% uptime, with scalability and uptime as a guarantee. Swipe is
                         super duper certified so don't worry
                     </p>
@@ -316,7 +352,7 @@
                         class="text-Mpurple2 hover-arrow flex justify-center items-center text-base font-bold rounded-3xl bg-transparent   hover:opacity-75 cursor-pointer">Pricing
                         details <img src="assets/arrow-right-purple.svg" alt=""></button>
                 </div>
-                <div class="pr-sm mr-sm flex flex-col items-start justify-center gap-3">
+                <div class="pr-sm mr-sm flex flex-col items-start justify-center gap-3 max-[640px]:mt-20">
                     <img src="assets/bars-icon.png" alt="" class="icon">
                     <h3 class="font-Mhead font-semibold text-h3 w-full">Start the integration</h3>
                     <p class="text-sm  tracking-tight mt-11">
@@ -332,8 +368,8 @@
         </div>
     </section>
     <footer class="flex flex-col justify-center items-center py-xl bg-light">
-        <div class="container w-full flex justify-center items-start box-border">
-            <div class="w-1/4 box-border pr-md flex flex-col justify-center items-start gap-5">
+        <div class="container w-full flex justify-center items-start box-border max-[768px]:flex-wrap">
+            <div class="w-1/4 box-border pr-md flex flex-col justify-center items-start gap-5 max-[768px]:w-1/2">
                 <img src="assets/logo-dark.svg" alt="">
                 <div class="flex items-center gap-4">
                     <img src="assets/location-icon.png" alt="">
@@ -344,7 +380,7 @@
                     <a class="text-Mpurple1 font-medium hover:text-Maccent" href="">English (United states)</a>
                 </div>
             </div>
-            <div class="w-1/4 box-border pl-md flex flex-col justify-center items-start">
+            <div class="w-1/4 box-border pl-md flex flex-col justify-center items-start max-[768px]:w-1/2">
                 <h3 class="font-Mhead font-semibold text-h4 w-full mb-5">Products</h3>
                 <ul class="flex flex-col gap-2">
                     <li>
@@ -367,7 +403,8 @@
                     </li>
                 </ul>
             </div>
-            <div class="w-1/4 box-border pl-md flex flex-col justify-center items-start">
+            <div
+                class="w-1/4 box-border pl-md flex flex-col justify-center items-start max-[768px]:w-1/2 max-[768px]:mt-20">
                 <h3 class="font-Mhead font-semibold text-h4 w-full mb-5">Use cases</h3>
                 <ul class="flex flex-col gap-2">
                     <li>
@@ -390,7 +427,8 @@
                     </li>
                 </ul>
             </div>
-            <div class="w-1/4 box-border pl-md flex flex-col justify-center items-start">
+            <div
+                class="w-1/4 box-border pl-md flex flex-col justify-center items-start max-[768px]:w-1/2 max-[768px]:mt-20">
                 <h3 class="font-Mhead font-semibold text-h4 mb-5 w-full">Resources</h3>
                 <ul class="flex flex-col gap-2">
                     <li>
@@ -416,6 +454,7 @@
         </div>
     </footer>
     <script src="gradient.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

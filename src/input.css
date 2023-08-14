@@ -88,6 +88,16 @@ footer a:hover {
     transform: skewY(-10deg);
 }
 
+@media only screen and (max-width:400px) {
+    .s-5::before {
+        height: 1050px;
+    }
+
+    .s-5 {
+        padding: 0;
+    }
+}
+
 .s-7::before {
     content: "";
     width: 100%;
@@ -103,29 +113,147 @@ footer a:hover {
 }
 
 
-.s-8{
+.s-8 {
     position: relative;
 }
-.s-8::before{
+
+.s-8::before {
     content: "";
     width: 100%;
     height: 100%;
     background-color: white;
     position: absolute;
     top: 0;
-    z-index: -1 ;
+    z-index: -1;
 }
 
-#gradient{
-    width: 200%;
-    height: 970px;
+#gradient {
+    width: 150%;
+    height: 1070px;
     transform: rotate(-10deg);
     position: absolute;
     top: -600px;
-    left: -50% ;
+    left: -50%;
     z-index: -1;
-    --gradient-color-1:#ef008f;
-    --gradient-color-2:#6ecef4;
-    --gradient-color-3:#7038ff;
-    --gradient-color-4:#ffba27;
+    --gradient-color-1: #ef008f;
+    --gradient-color-2: #6ecef4;
+    --gradient-color-3: #7038ff;
+    --gradient-color-4: #ffba27;
+}
+
+@media only screen and (max-width:640px) {
+    .container {
+        padding: 0 20px;
+
+        /* margin: 0 30px; */
+        /* max-width: 660px; */
+    }
+
+    #gradient {
+        height: 920px;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+
+}
+
+html,
+body {
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+
+
+@media only screen and (max-width:768px) {
+    .hamburgur {
+        height: 30px;
+        width: 50px;
+        background-color: rgba(250, 250, 250, 0.25);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hamburgur .bar {
+        width: 18px;
+        height: 2px;
+        background-color: white;
+        margin: 1px 0;
+    }
+
+
+}
+
+
+
+
+
+@keyframes fadebar2 {
+    from {
+        transform: scaleX(1);
+        opacity: 1;
+    }
+
+    to {
+        transform: scaleX(0);
+        opacity: 0;
+    }
+
+}
+
+@keyframes flipbar1 {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(45deg) translate(5px, 1px);
+    }
+
+}
+
+@keyframes flipbar3 {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(-45deg) translate(5px, -1px);
+    }
+
+}
+
+.animateBar1 {
+    animation: flipbar1 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.animateBar2 {
+    animation: fadebar2 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.animateBar3 {
+    animation: flipbar3 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.openDrawer{
+    transform: translateX(-160px);
+    transition: transform 0.3s;
+}
+
+.mobileNav{
+    right: -160px;
+}
+
+
+.navbar{
+    z-index: -1;
 }
